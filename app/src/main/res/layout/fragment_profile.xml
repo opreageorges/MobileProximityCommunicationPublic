@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ogeorges.mobileproximitycommunication.vmodels.ProfileViewModel" />
+    </data>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/avatarImage"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127"
+
+            android:onClick="@{(view) -> viewModel.avatarImageAction(view)}"
+            android:src="@{viewModel.user.avatarimg, default=@drawable/ic_baseline_face_24}"
+
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/avatar_image" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameInput"
+
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+
+            android:hint="@string/username"
+            android:text="@={viewModel.userUserName}"
+            android:lines="1"
+
+            android:inputType="text"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatarImage"
+             />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/realNameInput"
+
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+
+            android:hint="@string/real_name"
+            android:text="@={viewModel.userRealName}"
+            android:lines="1"
+
+            android:inputType="text"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameInput"
+            app:layout_constraintVertical_bias="0.063"
+            />
+
+        <ImageButton
+            android:id="@+id/finishProfile"
+            android:layout_width="wrap_content"
+            android:minWidth="48dp"
+            app:layout_constraintHorizontal_bias="0.884"
+
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintVertical_bias="0.906"
+
+            android:src="@drawable/ic_baseline_send_24"
+            app:tint="@color/design_default_color_on_secondary"
+            android:background="@android:color/transparent"
+
+            android:contentDescription="Finish first time setup"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/realNameInput"
+
+            android:onClick="@{(view) -> viewModel.finishProfile(view)}"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="messages_header">Mesaje</string>
+    <string name="user_name">Nume</string>
+    <string name="default_user_name">Nume de utilizator</string>
+    <string name="message">Mesaj</string>
+    <string name="avatar_image">Avatar</string>
+    <string name="username">Nume de utilizator</string>
+    <string name="sender">Expeditor</string>
+    <string name="accept">Acepta</string>
+    <string name="decline">Refuza</string>
+    <string name="send_button">Buton de trimitere</string>
+    <string name="new_chat_button">Buton initializare conversatie</string>
+    <string name="chats">Conversatii</string>
+    <string name="real_name">Nume real</string>
+    <string name="id">Id</string>
+    <string name="public_chat">Chat public</string>
+    <string name="settings_button">Setari</string>
+    <string name="clear_friends">Sterge toti prietenii</string>
+    <string name="refresh_connection">Reincarca conexiunea</string>
+    <string name="edit_profile">Editeaza profil</string>
+    <string name="accepted">Acceptat</string>
+    <string name="declined">Refuzat</string>
+    <string name="pending">Asteptare…</string>
+    <string name="is_available">Este disponibil</string>
+    <string name="clear_messages">Sterge mesajele</string>
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name" translatable="false">MobileProximityCommunication</string>
+    <string name="app_title" translatable="false">MPC</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="user_name">Name</string>
+    <string name="default_user_name">User Name</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+
+    <!-- Chat Bubble && Fragment Chat -->
+    <string name="message">Message</string>
+
+    <!-- Chat Button && Fragment Profile -->
+    <string name="avatar_image">Avatar image</string>
+
+    <!-- Fragment Profile && New Chat With Button -->
+    <string name="username">Username</string>
+
+    <!-- Chat Bubble -->
+    <string name="sender">Sender</string>
+    <!---->
+
+    <!-- Chat Button -->
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="accepted">Accepted</string>
+    <string name="declined">Declined</string>
+    <string name="pending">Pending…</string>
+    <!---->
+
+    <!-- Fragment Chat -->
+    <string name="send_button">Send button</string>
+    <!---->
+
+    <!-- Fragment Chat List-->
+    <string name="new_chat_button">New chat button</string>
+    <string name="chats">Chats</string>
+    <!---->
+
+    <!-- Fragment Profile -->
+    <string name="real_name">Real Name</string>
+    <!---->
+
+    <!-- New Chat With -->
+    <!---->
+
+    <!-- New Chat With Button-->
+    <string name="id">Id</string>
+    <!---->
+
+    <!-- Main Menu-->
+    <string name="edit_profile">Edit profile</string>
+    <string name="public_chat">Public chat</string>
+    <string name="settings_button">Settings button</string>
+    <string name="experimental" translatable="false">Experimental</string>
+    <string name="clear_friends">Clear friends</string>
+    <string name="clear_messages">Clear messages</string>
+    <string name="refresh_connection">Refresh connection</string>
+    <string name="is_available">Is available</string>
+    <!---->
+
+</resources>

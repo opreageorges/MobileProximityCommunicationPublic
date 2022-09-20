@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ogeorges.mobileproximitycommunication.vmodels.MainViewModel"
+             />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.fragment.app.FragmentContainerView
+
+            android:id="@+id/fragmentContainerView"
+            android:name="com.ogeorges.mobileproximitycommunication.views.ChatListFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976"
+
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main_navigation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
